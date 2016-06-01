@@ -7,7 +7,30 @@
 //
 
 #import "MMHomeViewController.h"
+#import "MMHomeModuleModel.h"
 
+@interface MMHomeViewController ()
+@property (nonatomic, strong) NSMutableArray *moduleArray;
+@end
 @implementation MMHomeViewController
 
+-(void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+    
+}
+
+- (void)addModuleWithText:(NSString *)text className:(NSString *)className image:(NSString *)image
+{
+//    MMHomeModuleModel *model
+//    [self.moduleArray addObject:model];
+}
+-(NSMutableArray *)moduleArray
+{
+    if (!_moduleArray) {
+        _moduleArray = [NSMutableArray new];
+    }
+    return _moduleArray;
+}
 @end

@@ -20,8 +20,10 @@
 		663855BA1CFEC2980048301D /* MMHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 663855B91CFEC2980048301D /* MMHomeViewController.m */; };
 		663855BD1CFEC2B30048301D /* MMNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 663855BC1CFEC2B30048301D /* MMNewsViewController.m */; };
 		663855C01CFEC3220048301D /* MMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 663855BF1CFEC3220048301D /* MMAppDelegate.m */; };
+		66DA50F71CFEE18C00D74B86 /* MMHomeModuleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 66DA50F61CFEE18C00D74B86 /* MMHomeModuleModel.m */; };
 		66E6B4011CFECB1E0008A0AF /* MMMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66E6B4001CFECB1E0008A0AF /* MMMeViewController.m */; };
 		66E6B4041CFECB510008A0AF /* MMOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66E6B4031CFECB510008A0AF /* MMOneViewController.m */; };
+		66EF63E51CFECEB300D8B027 /* MMHomeModuleSelectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 66EF63E41CFECEB300D8B027 /* MMHomeModuleSelectionView.m */; };
 		C6715EC6F3622C38662E5F60 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63D988642754B84A263FF9B3 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -73,10 +75,14 @@
 		663855BE1CFEC3220048301D /* MMAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMAppDelegate.h; sourceTree = "<group>"; };
 		663855BF1CFEC3220048301D /* MMAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMAppDelegate.m; sourceTree = "<group>"; };
 		663855C11CFEC3DD0048301D /* CONST.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CONST.h; sourceTree = "<group>"; };
+		66DA50F51CFEE18C00D74B86 /* MMHomeModuleModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMHomeModuleModel.h; sourceTree = "<group>"; };
+		66DA50F61CFEE18C00D74B86 /* MMHomeModuleModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMHomeModuleModel.m; sourceTree = "<group>"; };
 		66E6B3FF1CFECB1E0008A0AF /* MMMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMMeViewController.h; sourceTree = "<group>"; };
 		66E6B4001CFECB1E0008A0AF /* MMMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMMeViewController.m; sourceTree = "<group>"; };
 		66E6B4021CFECB510008A0AF /* MMOneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMOneViewController.h; sourceTree = "<group>"; };
 		66E6B4031CFECB510008A0AF /* MMOneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMOneViewController.m; sourceTree = "<group>"; };
+		66EF63E31CFECEB300D8B027 /* MMHomeModuleSelectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMHomeModuleSelectionView.h; sourceTree = "<group>"; };
+		66EF63E41CFECEB300D8B027 /* MMHomeModuleSelectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMHomeModuleSelectionView.m; sourceTree = "<group>"; };
 		7EDF14E90BD0A6816FF9CA27 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		92B7EF985D94433942D4E44D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -232,6 +238,8 @@
 		663855A11CFEC10E0048301D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				66DA50F51CFEE18C00D74B86 /* MMHomeModuleModel.h */,
+				66DA50F61CFEE18C00D74B86 /* MMHomeModuleModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -239,6 +247,8 @@
 		663855A21CFEC10E0048301D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				66EF63E31CFECEB300D8B027 /* MMHomeModuleSelectionView.h */,
+				66EF63E41CFECEB300D8B027 /* MMHomeModuleSelectionView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -529,8 +539,10 @@
 				66E6B4041CFECB510008A0AF /* MMOneViewController.m in Sources */,
 				663855A81CFEC1A70048301D /* MMBaseTabBarController.m in Sources */,
 				663855BD1CFEC2B30048301D /* MMNewsViewController.m in Sources */,
+				66EF63E51CFECEB300D8B027 /* MMHomeModuleSelectionView.m in Sources */,
 				663855C01CFEC3220048301D /* MMAppDelegate.m in Sources */,
 				663855BA1CFEC2980048301D /* MMHomeViewController.m in Sources */,
+				66DA50F71CFEE18C00D74B86 /* MMHomeModuleModel.m in Sources */,
 				663855B71CFEC27D0048301D /* MMBaseViewController.m in Sources */,
 				663855AE1CFEC1DA0048301D /* MMFirstTabBarController.m in Sources */,
 				663855B41CFEC2540048301D /* MMFirstNavigationController.m in Sources */,
