@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-
+typedef void (^ItemBlock)(NSInteger itemNum);
 @interface MMHomeModuleSelectionView : UICollectionView
 @property (nonatomic, strong) NSArray *contentArray;
+@property (nonatomic, copy) ItemBlock block;;
+
+- (void)clickCell:(ItemBlock)block;
 @end

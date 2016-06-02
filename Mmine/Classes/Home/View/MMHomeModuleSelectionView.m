@@ -30,21 +30,27 @@ static NSString *cellID = @"msCell";
     [self.contentView addSubview:self.imageView];
     [self.contentView addSubview:self.text];
     
+    
 }
 -(void)setModel:(MMHomeModuleModel *)model
 {
     _model = model;
     if (model.image) self.imageView.image = [UIImage imageNamed:model.image];
+    if (model.name) self.text.text = model.name;
     
 }
 -(void)layoutSubviews
 {
     [super layoutSubviews];
-    self.imageView.frame = self.frame;
+    self.imageView.frame = self.contentView.bounds;
     CGFloat cellH = self.bounds.size.height;
     CGFloat cellW = self.bounds.size.width;
-    
-    self.text.frame = CGRectMake(cellH * 0.3, 0, cellW, cellH * 0.3);
+    CGFloat textH = cellH * 0.3;
+    CGFloat textY = cellH - textH;
+    CGFloat imageH = cellH - textH + 1;
+    CGFloat imageW = cellW;
+    self.text.frame = CGRectMake(0, textY, cellW, textH);
+    self.imageView.frame = CGRectMake(0, 0, imageW, imageH);
 }
 -(UIImageView *)imageView
 {
@@ -59,8 +65,11 @@ static NSString *cellID = @"msCell";
 {
     if (!_text) {
         _text = [UILabel new];
-        _text.font = [UIFont systemFontOfSize:13.0];
-        
+        _text.font = [UIFont systemFontOfSize:12.0];
+        _text.baselineAdjustment = UIBaselineAdjustmentNone;
+        _text.textAlignment = NSTextAlignmentCenter;
+        _text.backgroundColor = MColorBackground;
+       
     }
     return _text;
 }
@@ -71,9 +80,15 @@ static NSString *cellID = @"msCell";
 @end
 @implementation MMHomeModuleSelectionView
 
-- (instancetype)initWithFrame:(CGRect)frame
+- (instancetype)initWithFrame:(CGRect)frame collectionViewLayout:(nonnull UICollectionViewLayout *)layout
 {
-    self = [super initWithFrame:frame];
+    UICollectionViewFlowLayout *layout1 = [[UICollectionViewFlowLayout alloc] init];
+    layout1.itemSize = CGSizeMake(kScreenWidth / 4  - 1, kScreenWidth / 4 - 1);
+    layout1.minimumLineSpacing = 1;
+    layout1.minimumInteritemSpacing = 0;
+    layout1.sectionInset = UIEdgeInsetsMake(0, 0.5, 0, 0.5);
+    
+    self = [super initWithFrame:frame collectionViewLayout:layout1];
     if (self) {
         [self createContent];
         
@@ -82,20 +97,46 @@ static NSString *cellID = @"msCell";
 }
 - (void)createContent
 {
+    self.delegate = self;
+    self.dataSource = self;
     self.scrollsToTop = NO;
+    self.showsVerticalScrollIndicator = NO;
+    self.showsHorizontalScrollIndicator = NO;
     [self registerClass:[MMHomeMSCell class] forCellWithReuseIdentifier:cellID];
+    
+    self.allowsMultipleSelection = YES;
 }
 #pragma mark - Delegate\DataSource
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return self.contentArray.count ? self.contentArray.count : 1;
+    NSLog(@"%lu",(unsigned long)self.contentArray.count);
+    return self.contentArray.count;
+}
+-(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
+{
+    return 1;
 }
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     
     MMHomeMSCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellID forIndexPath:indexPath];
+    
     cell.model = self.contentArray[indexPath.item];
+    cell.backgroundColor = MColorBackground;
     return cell;
+}
+-(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (self.block) {
+        self.block(indexPath.item);
+    }
+}
+- (void)clickCell:(ItemBlock)block
+{
+    if (block) {
+        self.block = block;
+    }
+    
 }
 @end
 
