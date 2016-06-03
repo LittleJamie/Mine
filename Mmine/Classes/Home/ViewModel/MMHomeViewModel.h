@@ -11,4 +11,5 @@
 @interface MMHomeViewModel : NSObject
 
 + (void)loadModuleSelectionViewData:(void (^)(NSArray *moduleArray))block;
++ (void)loadRotatorData:(void (^)(NSArray *rotatorArray))block;
 @end

@@ -44,6 +44,14 @@
     }
 }
 
++ (void)loadRotatorData:(void (^)(NSArray *rotatorArray))block;
+{
+    
+    NSArray *imgArray = [NSArray arrayWithObjects:@"cat.png",@"cat.png",@"cat.png",@"cat.png",@"cat.png",@"cat.png",@"cat.png",@"cat.png",@"cat.png",@"cat.png",@"cat.png",@"cat.png", nil];
+    if (block) {
+        block(imgArray);
+    }
+}
 - (void)addModuleWithName:(NSString *)name className:(NSString *)className image:(NSString *)image
 {
     MMHomeModuleModel *model = MMHomeModuleModel.new;

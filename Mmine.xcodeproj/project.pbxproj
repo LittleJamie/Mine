@@ -48,7 +48,9 @@
 		663855BD1CFEC2B30048301D /* MMNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 663855BC1CFEC2B30048301D /* MMNewsViewController.m */; };
 		663855C01CFEC3220048301D /* MMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 663855BF1CFEC3220048301D /* MMAppDelegate.m */; };
 		66464BFD1CFFD7B2004AD267 /* MMHomeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 66464BFC1CFFD7B2004AD267 /* MMHomeViewModel.m */; };
+		66C381461D012E99006B06F4 /* MMRotatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C381451D012E99006B06F4 /* MMRotatorView.m */; };
 		66DA50F71CFEE18C00D74B86 /* MMHomeModuleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 66DA50F61CFEE18C00D74B86 /* MMHomeModuleModel.m */; };
+		66E298781D01947200647CDA /* MMHomeTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 66E298771D01947200647CDA /* MMHomeTopView.m */; };
 		66E6B4011CFECB1E0008A0AF /* MMMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66E6B4001CFECB1E0008A0AF /* MMMeViewController.m */; };
 		66E6B4041CFECB510008A0AF /* MMOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66E6B4031CFECB510008A0AF /* MMOneViewController.m */; };
 		66EF63E51CFECEB300D8B027 /* MMHomeModuleSelectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 66EF63E41CFECEB300D8B027 /* MMHomeModuleSelectionView.m */; };
@@ -158,8 +160,12 @@
 		663855C11CFEC3DD0048301D /* CONST.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CONST.h; sourceTree = "<group>"; };
 		66464BFB1CFFD7B1004AD267 /* MMHomeViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMHomeViewModel.h; sourceTree = "<group>"; };
 		66464BFC1CFFD7B2004AD267 /* MMHomeViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMHomeViewModel.m; sourceTree = "<group>"; };
+		66C381441D012E99006B06F4 /* MMRotatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMRotatorView.h; sourceTree = "<group>"; };
+		66C381451D012E99006B06F4 /* MMRotatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMRotatorView.m; sourceTree = "<group>"; };
 		66DA50F51CFEE18C00D74B86 /* MMHomeModuleModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMHomeModuleModel.h; sourceTree = "<group>"; };
 		66DA50F61CFEE18C00D74B86 /* MMHomeModuleModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMHomeModuleModel.m; sourceTree = "<group>"; };
+		66E298761D01947200647CDA /* MMHomeTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMHomeTopView.h; sourceTree = "<group>"; };
+		66E298771D01947200647CDA /* MMHomeTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMHomeTopView.m; sourceTree = "<group>"; };
 		66E6B3FF1CFECB1E0008A0AF /* MMMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMMeViewController.h; sourceTree = "<group>"; };
 		66E6B4001CFECB1E0008A0AF /* MMMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMMeViewController.m; sourceTree = "<group>"; };
 		66E6B4021CFECB510008A0AF /* MMOneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMOneViewController.h; sourceTree = "<group>"; };
@@ -475,6 +481,10 @@
 			children = (
 				66EF63E31CFECEB300D8B027 /* MMHomeModuleSelectionView.h */,
 				66EF63E41CFECEB300D8B027 /* MMHomeModuleSelectionView.m */,
+				66C381441D012E99006B06F4 /* MMRotatorView.h */,
+				66C381451D012E99006B06F4 /* MMRotatorView.m */,
+				66E298761D01947200647CDA /* MMHomeTopView.h */,
+				66E298771D01947200647CDA /* MMHomeTopView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -789,6 +799,7 @@
 				66464BFD1CFFD7B2004AD267 /* MMHomeViewModel.m in Sources */,
 				660D11591D002E550059413A /* UIColor+ExtensionMExt.m in Sources */,
 				66DA50F71CFEE18C00D74B86 /* MMHomeModuleModel.m in Sources */,
+				66C381461D012E99006B06F4 /* MMRotatorView.m in Sources */,
 				660D112D1D0020880059413A /* MMMVideoViewController.m in Sources */,
 				660D115E1D002E550059413A /* UIView+ExtensionMExt.m in Sources */,
 				663855B71CFEC27D0048301D /* MMBaseViewController.m in Sources */,
@@ -798,6 +809,7 @@
 				66E6B4011CFECB1E0008A0AF /* MMMeViewController.m in Sources */,
 				660D11271D0020640059413A /* MMMPhoneViewController.m in Sources */,
 				660D11501D002E550059413A /* HelperMExt.m in Sources */,
+				66E298781D01947200647CDA /* MMHomeTopView.m in Sources */,
 				6638556A1CFEBD840048301D /* main.m in Sources */,
 				660D115A1D002E550059413A /* UIDevice+ExtensionMExt.m in Sources */,
 				660D11181D001FC90059413A /* MMMBrowserViewController.m in Sources */,
@@ -937,6 +949,7 @@
 			baseConfigurationReference = 7EDF14E90BD0A6816FF9CA27 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PREFIX_HEADER = /Users/chenjinming/Documents/Mine/Mmine/PrefixHeader.pch;
 				INFOPLIST_FILE = Mmine/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -950,6 +963,7 @@
 			baseConfigurationReference = 92B7EF985D94433942D4E44D /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PREFIX_HEADER = /Users/chenjinming/Documents/Mine/Mmine/PrefixHeader.pch;
 				INFOPLIST_FILE = Mmine/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

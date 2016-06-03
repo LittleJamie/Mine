@@ -86,7 +86,7 @@ static NSString *cellID = @"msCell";
     layout1.itemSize = CGSizeMake(kScreenWidth / 4  - 1, kScreenWidth / 4 - 1);
     layout1.minimumLineSpacing = 1;
     layout1.minimumInteritemSpacing = 0;
-    layout1.sectionInset = UIEdgeInsetsMake(0, 0.5, 0, 0.5);
+    layout1.sectionInset = UIEdgeInsetsMake(0.5, 0.5, 0.5, 0.5);
     
     self = [super initWithFrame:frame collectionViewLayout:layout1];
     if (self) {
@@ -103,7 +103,7 @@ static NSString *cellID = @"msCell";
     self.showsVerticalScrollIndicator = NO;
     self.showsHorizontalScrollIndicator = NO;
     [self registerClass:[MMHomeMSCell class] forCellWithReuseIdentifier:cellID];
-    
+    self.scrollEnabled = NO;
     self.allowsMultipleSelection = YES;
 }
 #pragma mark - Delegate\DataSource
