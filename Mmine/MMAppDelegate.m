@@ -12,6 +12,7 @@
 #import "MMHomeViewController.h"
 #import "MMMeViewController.h"
 #import "MMOneViewController.h"
+#import "DonewsAnalytics.h"
 @interface MMAppDelegate ()<UITabBarControllerDelegate,UINavigationControllerDelegate>
 
 @end
@@ -23,6 +24,8 @@
     [self createRootViewController];
     
     [self.window makeKeyAndVisible];
+    
+    [DonewsAnalytics registDonewsSDK:@"test" channelID:nil];
     return YES;
 }
 - (void)createRootViewController

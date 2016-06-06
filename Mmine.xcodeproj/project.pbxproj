@@ -48,6 +48,8 @@
 		663855BD1CFEC2B30048301D /* MMNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 663855BC1CFEC2B30048301D /* MMNewsViewController.m */; };
 		663855C01CFEC3220048301D /* MMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 663855BF1CFEC3220048301D /* MMAppDelegate.m */; };
 		66464BFD1CFFD7B2004AD267 /* MMHomeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 66464BFC1CFFD7B2004AD267 /* MMHomeViewModel.m */; };
+		668774481D05113800DA0C58 /* libDonewsAnalyticsSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 668774471D05113800DA0C58 /* libDonewsAnalyticsSDK.a */; };
+		668D25A41D057FE00037498E /* UIBarButtonItem+JAExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 668D25A31D057FE00037498E /* UIBarButtonItem+JAExt.m */; };
 		66C381461D012E99006B06F4 /* MMRotatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C381451D012E99006B06F4 /* MMRotatorView.m */; };
 		66DA50F71CFEE18C00D74B86 /* MMHomeModuleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 66DA50F61CFEE18C00D74B86 /* MMHomeModuleModel.m */; };
 		66E298781D01947200647CDA /* MMHomeTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 66E298771D01947200647CDA /* MMHomeTopView.m */; };
@@ -160,6 +162,11 @@
 		663855C11CFEC3DD0048301D /* CONST.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CONST.h; sourceTree = "<group>"; };
 		66464BFB1CFFD7B1004AD267 /* MMHomeViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMHomeViewModel.h; sourceTree = "<group>"; };
 		66464BFC1CFFD7B2004AD267 /* MMHomeViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMHomeViewModel.m; sourceTree = "<group>"; };
+		668774451D05113800DA0C58 /* DonewsADView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DonewsADView.h; sourceTree = "<group>"; };
+		668774461D05113800DA0C58 /* DonewsAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DonewsAnalytics.h; sourceTree = "<group>"; };
+		668774471D05113800DA0C58 /* libDonewsAnalyticsSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libDonewsAnalyticsSDK.a; sourceTree = "<group>"; };
+		668D25A21D057FE00037498E /* UIBarButtonItem+JAExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+JAExt.h"; sourceTree = "<group>"; };
+		668D25A31D057FE00037498E /* UIBarButtonItem+JAExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+JAExt.m"; sourceTree = "<group>"; };
 		66C381441D012E99006B06F4 /* MMRotatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMRotatorView.h; sourceTree = "<group>"; };
 		66C381451D012E99006B06F4 /* MMRotatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMRotatorView.m; sourceTree = "<group>"; };
 		66DA50F51CFEE18C00D74B86 /* MMHomeModuleModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMHomeModuleModel.h; sourceTree = "<group>"; };
@@ -182,6 +189,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				660D11641D002F890059413A /* libz.tbd in Frameworks */,
+				668774481D05113800DA0C58 /* libDonewsAnalyticsSDK.a in Frameworks */,
 				660D11621D002F750059413A /* Security.framework in Frameworks */,
 				660D11601D002F690059413A /* ImageIO.framework in Frameworks */,
 				C6715EC6F3622C38662E5F60 /* Pods.framework in Frameworks */,
@@ -501,6 +509,8 @@
 		663855A41CFEC10E0048301D /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				668D25A11D057FE00037498E /* Categories */,
+				668774441D05113800DA0C58 /* DonewsSDK */,
 				660D112E1D002E550059413A /* MExtensionKit */,
 				663855A51CFEC10E0048301D /* Configs */,
 			);
@@ -513,6 +523,25 @@
 				663855C11CFEC3DD0048301D /* CONST.h */,
 			);
 			path = Configs;
+			sourceTree = "<group>";
+		};
+		668774441D05113800DA0C58 /* DonewsSDK */ = {
+			isa = PBXGroup;
+			children = (
+				668774451D05113800DA0C58 /* DonewsADView.h */,
+				668774461D05113800DA0C58 /* DonewsAnalytics.h */,
+				668774471D05113800DA0C58 /* libDonewsAnalyticsSDK.a */,
+			);
+			path = DonewsSDK;
+			sourceTree = "<group>";
+		};
+		668D25A11D057FE00037498E /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				668D25A21D057FE00037498E /* UIBarButtonItem+JAExt.h */,
+				668D25A31D057FE00037498E /* UIBarButtonItem+JAExt.m */,
+			);
+			path = Categories;
 			sourceTree = "<group>";
 		};
 		66E6B3F71CFECAFE0008A0AF /* Me */ = {
@@ -775,6 +804,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				660D111B1D001FE20059413A /* MMNCalenderViewController.m in Sources */,
+				668D25A41D057FE00037498E /* UIBarButtonItem+JAExt.m in Sources */,
 				660D11511D002E550059413A /* LanguageMExt.m in Sources */,
 				660D115D1D002E550059413A /* UILabel+ExtensionMExt.m in Sources */,
 				663855B11CFEC2060048301D /* MMBaseNavigationController.m in Sources */,
@@ -953,6 +983,10 @@
 				GCC_PREFIX_HEADER = /Users/chenjinming/Documents/Mine/Mmine/PrefixHeader.pch;
 				INFOPLIST_FILE = Mmine/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Mmine/Classes/Tools/DonewsSDK",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Ming.Mmine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -967,6 +1001,10 @@
 				GCC_PREFIX_HEADER = /Users/chenjinming/Documents/Mine/Mmine/PrefixHeader.pch;
 				INFOPLIST_FILE = Mmine/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Mmine/Classes/Tools/DonewsSDK",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Ming.Mmine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

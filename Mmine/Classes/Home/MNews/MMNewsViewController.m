@@ -14,5 +14,6 @@
 {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor grayColor];
+    self.navigationController.navigationBar.hidden = NO;
 }
 @end

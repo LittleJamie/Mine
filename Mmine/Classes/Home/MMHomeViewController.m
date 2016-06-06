@@ -35,6 +35,7 @@
 - (void)createContent
 {
     self.title = @"首页";
+    self.navigationController.navigationBar.hidden = NO;
     [self.view addSubview:self.scrollView];
     self.view.backgroundColor = MColorBackground;
 
