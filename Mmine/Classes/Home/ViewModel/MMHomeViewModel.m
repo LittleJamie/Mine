@@ -27,7 +27,7 @@
 {
     MMHomeViewModel *viewModel = [MMHomeViewModel new];
     
-    [viewModel addModuleWithName:@"MNews" className:@"MMNewsViewController" image:nil];
+    [viewModel addModuleWithName:@"MNews" className:@"MMNewsNavigationController" image:nil];
     [viewModel addModuleWithName:@"MBook" className:@"MMMBookViewController" image:nil];
     [viewModel addModuleWithName:@"MBrowser" className:@"MMMBrowserViewController" image:nil];
     [viewModel addModuleWithName:@"MCalendar" className:@"MMNCalenderViewController" image:nil];

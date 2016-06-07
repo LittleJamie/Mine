@@ -88,7 +88,7 @@ static NSString *footerID = @"onefooter";
         if (class) {
             UIViewController *viewController = class.new;
             viewController.title = model.name;
-            self.title = @"";
+            
             [self.navigationController pushViewController:viewController animated:YES];
         }
     }];

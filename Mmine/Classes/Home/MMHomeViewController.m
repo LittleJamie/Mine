@@ -11,6 +11,9 @@
 #import "MMHomeModuleSelectionView.h"
 #import "MMHomeViewModel.h"
 #import "MMRotatorView.h"
+#import "UIBarButtonItem+JAExt.h"
+#import "MMNewsNavigationController.h"
+#import "MMSecondNavigationController.h"
 @interface MMHomeViewController ()<UIScrollViewDelegate>
 @property (nonatomic, strong) NSArray *moduleArray;
 @property (nonatomic, strong) NSArray *rotatorArray;
@@ -29,6 +32,7 @@
         self.rotatorArray = rotatorArray;
     }];
     [self createContent];
+    [self createNavigation];
 
 }
 
@@ -39,6 +43,7 @@
     [self.view addSubview:self.scrollView];
     self.view.backgroundColor = MColorBackground;
 
+    
     MMHomeModuleSelectionView *msView = [[MMHomeModuleSelectionView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.width / 4 * 3) collectionViewLayout:[UICollectionViewLayout new]];
     
     msView.backgroundColor = [UIColor blackColor];
@@ -50,14 +55,24 @@
         if (class) {
             UIViewController *viewController = class.new;
             viewController.title = model.name;
-            self.title = @"";
-            [self.navigationController pushViewController:viewController animated:YES];
+            
+            [self presentViewController:viewController animated:NO completion:nil];
+//            [self.navigationController pushViewController:viewController animated:YES];
         }
     }];
     [self.scrollView addSubview:msView];
     self.scrollView.frame = CGRectMake(0, 0, kScreenWidth, kScreenHeight);
     self.scrollView.contentSize = CGSizeMake(kScreenWidth, kScreenHeight);
 
+}
+
+- (void)createNavigation
+{
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImageName:@"navigationbar_check_in" HighImageNmae:@"navigationbar_check_in_highlighted" Target:self Action:@selector(leftBarClick)];
+}
+- (void)leftBarClick
+{
+    NSLog(@"1111");
 }
 -(UIScrollView *)scrollView
 {

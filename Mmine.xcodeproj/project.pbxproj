@@ -56,6 +56,8 @@
 		66E6B4011CFECB1E0008A0AF /* MMMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66E6B4001CFECB1E0008A0AF /* MMMeViewController.m */; };
 		66E6B4041CFECB510008A0AF /* MMOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66E6B4031CFECB510008A0AF /* MMOneViewController.m */; };
 		66EF63E51CFECEB300D8B027 /* MMHomeModuleSelectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 66EF63E41CFECEB300D8B027 /* MMHomeModuleSelectionView.m */; };
+		66F488761D069B6C002CAC32 /* MMNewsNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66F488751D069B6C002CAC32 /* MMNewsNavigationController.m */; };
+		66F488791D069DA4002CAC32 /* MMSecondNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66F488781D069DA4002CAC32 /* MMSecondNavigationController.m */; };
 		C6715EC6F3622C38662E5F60 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63D988642754B84A263FF9B3 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -179,6 +181,10 @@
 		66E6B4031CFECB510008A0AF /* MMOneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMOneViewController.m; sourceTree = "<group>"; };
 		66EF63E31CFECEB300D8B027 /* MMHomeModuleSelectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMHomeModuleSelectionView.h; sourceTree = "<group>"; };
 		66EF63E41CFECEB300D8B027 /* MMHomeModuleSelectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMHomeModuleSelectionView.m; sourceTree = "<group>"; };
+		66F488741D069B6C002CAC32 /* MMNewsNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMNewsNavigationController.h; sourceTree = "<group>"; };
+		66F488751D069B6C002CAC32 /* MMNewsNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMNewsNavigationController.m; sourceTree = "<group>"; };
+		66F488771D069DA4002CAC32 /* MMSecondNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMSecondNavigationController.h; sourceTree = "<group>"; };
+		66F488781D069DA4002CAC32 /* MMSecondNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMSecondNavigationController.m; sourceTree = "<group>"; };
 		7EDF14E90BD0A6816FF9CA27 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		92B7EF985D94433942D4E44D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -440,6 +446,8 @@
 				663855B31CFEC2540048301D /* MMFirstNavigationController.m */,
 				663855B51CFEC27D0048301D /* MMBaseViewController.h */,
 				663855B61CFEC27D0048301D /* MMBaseViewController.m */,
+				66F488771D069DA4002CAC32 /* MMSecondNavigationController.h */,
+				66F488781D069DA4002CAC32 /* MMSecondNavigationController.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -471,6 +479,8 @@
 			children = (
 				663855BB1CFEC2B30048301D /* MMNewsViewController.h */,
 				663855BC1CFEC2B30048301D /* MMNewsViewController.m */,
+				66F488741D069B6C002CAC32 /* MMNewsNavigationController.h */,
+				66F488751D069B6C002CAC32 /* MMNewsNavigationController.m */,
 			);
 			path = MNews;
 			sourceTree = "<group>";
@@ -819,6 +829,7 @@
 				66EF63E51CFECEB300D8B027 /* MMHomeModuleSelectionView.m in Sources */,
 				663855C01CFEC3220048301D /* MMAppDelegate.m in Sources */,
 				660D11541D002E550059413A /* NSDate+ExtensionMExt.m in Sources */,
+				66F488761D069B6C002CAC32 /* MMNewsNavigationController.m in Sources */,
 				663855BA1CFEC2980048301D /* MMHomeViewController.m in Sources */,
 				660D11531D002E550059413A /* NSData+ExtensionMExt.m in Sources */,
 				660D112A1D00207B0059413A /* MMMPocketBookViewController.m in Sources */,
@@ -843,6 +854,7 @@
 				6638556A1CFEBD840048301D /* main.m in Sources */,
 				660D115A1D002E550059413A /* UIDevice+ExtensionMExt.m in Sources */,
 				660D11181D001FC90059413A /* MMMBrowserViewController.m in Sources */,
+				66F488791D069DA4002CAC32 /* MMSecondNavigationController.m in Sources */,
 				660D11551D002E550059413A /* NSDictionary+ExtensionMExt.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

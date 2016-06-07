@@ -9,6 +9,7 @@
 
 #import "MMBaseNavigationController.h"
 
+#import "UIBarButtonItem+JAExt.h"
 @implementation MMBaseNavigationController
 
 +(void)initialize
@@ -21,7 +22,7 @@
     UINavigationBar *appearance = [UINavigationBar appearance];
     NSMutableDictionary *textAttrs = [NSMutableDictionary dictionary];
     textAttrs[NSForegroundColorAttributeName] = [UIColor blackColor];
-    textAttrs[NSFontAttributeName] = [UIFont systemFontOfSize:10.0 weight:1.0];
+    textAttrs[NSFontAttributeName] = [UIFont systemFontOfSize:20.0 weight:1.0];
 //    textAttrs[NSShadowAttributeName] = [[NSShadow alloc] init];
     [appearance setTitleTextAttributes:textAttrs];
 }
@@ -52,7 +53,7 @@
     //    判断是否为栈底控制器如果不是栈底控制器则隐藏 tabbar
     if (self.viewControllers.count > 0) {
         viewController.hidesBottomBarWhenPushed = NO;
-        viewController.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImageName:@"navigationbar_back" HighImageNmae:@"navigationbar_back_highlighted" Target:self Action:@selector(back)];
+        viewController.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImageName:@"navigationbar_back_withtext" HighImageNmae:@"navigationbar_back_withtext_highlighted" Target:self Action:@selector(back)];
         
         viewController.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithImageName:@"navigationbar_more" HighImageNmae:@"navigationbar_more_highlighted" Target:self Action:@selector(more)];
         
@@ -64,6 +65,7 @@
  */
 -(void)back
 {
+    
     [self popViewControllerAnimated:YES];
 }
 /**
