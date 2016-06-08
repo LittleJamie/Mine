@@ -34,6 +34,7 @@
 		660D11601D002F690059413A /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 660D115F1D002F690059413A /* ImageIO.framework */; };
 		660D11621D002F750059413A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 660D11611D002F750059413A /* Security.framework */; };
 		660D11641D002F890059413A /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 660D11631D002F890059413A /* libz.tbd */; };
+		6628D6451D07B6770092E003 /* MMNewsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6628D6441D07B6770092E003 /* MMNewsViewModel.m */; };
 		6638556A1CFEBD840048301D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 663855691CFEBD840048301D /* main.m */; };
 		663855751CFEBD840048301D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 663855741CFEBD840048301D /* Assets.xcassets */; };
 		663855781CFEBD840048301D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 663855761CFEBD840048301D /* LaunchScreen.storyboard */; };
@@ -133,6 +134,8 @@
 		660D115F1D002F690059413A /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		660D11611D002F750059413A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		660D11631D002F890059413A /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		6628D6431D07B6770092E003 /* MMNewsViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMNewsViewModel.h; sourceTree = "<group>"; };
+		6628D6441D07B6770092E003 /* MMNewsViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMNewsViewModel.m; sourceTree = "<group>"; };
 		663855651CFEBD840048301D /* Mmine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mmine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		663855691CFEBD840048301D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		663855741CFEBD840048301D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -481,6 +484,8 @@
 				663855BC1CFEC2B30048301D /* MMNewsViewController.m */,
 				66F488741D069B6C002CAC32 /* MMNewsNavigationController.h */,
 				66F488751D069B6C002CAC32 /* MMNewsNavigationController.m */,
+				6628D6431D07B6770092E003 /* MMNewsViewModel.h */,
+				6628D6441D07B6770092E003 /* MMNewsViewModel.m */,
 			);
 			path = MNews;
 			sourceTree = "<group>";
@@ -836,6 +841,7 @@
 				660D115C1D002E550059413A /* UIImage+ExtensionMExt.m in Sources */,
 				660D11581D002E550059413A /* UIApplication+ExtensionMExt.m in Sources */,
 				660D11241D0020570059413A /* MMMMusicPlayerViewController.m in Sources */,
+				6628D6451D07B6770092E003 /* MMNewsViewModel.m in Sources */,
 				660D11151D001FBB0059413A /* MMMBookViewController.m in Sources */,
 				66464BFD1CFFD7B2004AD267 /* MMHomeViewModel.m in Sources */,
 				660D11591D002E550059413A /* UIColor+ExtensionMExt.m in Sources */,
