@@ -9,6 +9,7 @@
 #import "MMNewsViewController.h"
 #import "UIBarButtonItem+JAExt.h"
 #import "MMNewsViewModel.h"
+#import "MMNewsListView.h"
 @implementation MMNewsViewController
 
 -(void)viewDidLoad
@@ -23,31 +24,17 @@
     self.navigationController.navigationBar.hidden = NO;
     self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImageName:@"navigationbar_back_withtext" HighImageNmae:@"navigationbar_back_withtext_highlighted" Target:self Action:@selector(back)];
     self.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithImageName:@"navigationbar_back_withtext" HighImageNmae:@"navigationbar_back_withtext_highlighted" Target:self Action:@selector(back)];
-    
-    NSArray *listArray = [MMNewsViewModel loadChannelList];
-    UIScrollView *topScrollView = [[UIScrollView alloc] init];
-    
-    CGFloat buttonW = 60;
-    topScrollView.frame = CGRectMake(0, 0, kScreenWidth * 0.7, 44);
-    topScrollView.contentSize = CGSizeMake(listArray.count * buttonW, 0);
-    topScrollView.backgroundColor = [UIColor blueColor];
-    
-    
-    for (NSInteger i = 0; i < listArray.count; i++) {
-        UIButton *button = [[UIButton alloc] init];
-        
-        button.x = i * buttonW;
-        button.size = CGSizeMake(buttonW, 44);
-        button.backgroundColor = MRandomColor;
-        [button setTitle:listArray[i] forState:UIControlStateNormal];
-        [topScrollView addSubview: button];
-    }
-    self.navigationItem.titleView = topScrollView;
-    NSLog(@"%f",self.navigationItem.titleView.frame.origin.x);
-    [self.navigationController.navigationBar addSubview:topScrollView];
+
 }
 - (void)createContent
 {
+    NSArray *listArray = [MMNewsViewModel loadChannelList];
+    MMNewsListView *topScrollView = [[MMNewsListView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, 108)];
+    topScrollView.list = listArray;
+    topScrollView.backgroundColor = MRandomColor;
+
+    
+    [self.view addSubview:topScrollView];
     
 }
 #pragma mark - Event Processing
@@ -55,6 +42,10 @@
 - (void)back
 {
     [self dismissViewControllerAnimated:NO completion:nil];
+    
+}
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
     
 }
 @end

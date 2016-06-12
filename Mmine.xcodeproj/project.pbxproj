@@ -51,6 +51,11 @@
 		66464BFD1CFFD7B2004AD267 /* MMHomeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 66464BFC1CFFD7B2004AD267 /* MMHomeViewModel.m */; };
 		668774481D05113800DA0C58 /* libDonewsAnalyticsSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 668774471D05113800DA0C58 /* libDonewsAnalyticsSDK.a */; };
 		668D25A41D057FE00037498E /* UIBarButtonItem+JAExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 668D25A31D057FE00037498E /* UIBarButtonItem+JAExt.m */; };
+		66B5A0691D0CFC1200373991 /* MMNewsSectionsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B5A0681D0CFC1200373991 /* MMNewsSectionsView.m */; };
+		66B5A06C1D0CFE9200373991 /* MMNewsSectionsTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B5A06B1D0CFE9200373991 /* MMNewsSectionsTitleView.m */; };
+		66B5A06F1D0CFF7000373991 /* MMNewsSectionsTitleViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B5A06E1D0CFF7000373991 /* MMNewsSectionsTitleViewCell.m */; };
+		66B5A0721D0D008000373991 /* MMNewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B5A0711D0D008000373991 /* MMNewsModel.m */; };
+		66B5A0751D0D085700373991 /* MMNewsListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B5A0741D0D085700373991 /* MMNewsListView.m */; };
 		66C381461D012E99006B06F4 /* MMRotatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C381451D012E99006B06F4 /* MMRotatorView.m */; };
 		66DA50F71CFEE18C00D74B86 /* MMHomeModuleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 66DA50F61CFEE18C00D74B86 /* MMHomeModuleModel.m */; };
 		66E298781D01947200647CDA /* MMHomeTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 66E298771D01947200647CDA /* MMHomeTopView.m */; };
@@ -172,6 +177,16 @@
 		668774471D05113800DA0C58 /* libDonewsAnalyticsSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libDonewsAnalyticsSDK.a; sourceTree = "<group>"; };
 		668D25A21D057FE00037498E /* UIBarButtonItem+JAExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+JAExt.h"; sourceTree = "<group>"; };
 		668D25A31D057FE00037498E /* UIBarButtonItem+JAExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+JAExt.m"; sourceTree = "<group>"; };
+		66B5A0671D0CFC1200373991 /* MMNewsSectionsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMNewsSectionsView.h; sourceTree = "<group>"; };
+		66B5A0681D0CFC1200373991 /* MMNewsSectionsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMNewsSectionsView.m; sourceTree = "<group>"; };
+		66B5A06A1D0CFE9200373991 /* MMNewsSectionsTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMNewsSectionsTitleView.h; sourceTree = "<group>"; };
+		66B5A06B1D0CFE9200373991 /* MMNewsSectionsTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMNewsSectionsTitleView.m; sourceTree = "<group>"; };
+		66B5A06D1D0CFF7000373991 /* MMNewsSectionsTitleViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMNewsSectionsTitleViewCell.h; sourceTree = "<group>"; };
+		66B5A06E1D0CFF7000373991 /* MMNewsSectionsTitleViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMNewsSectionsTitleViewCell.m; sourceTree = "<group>"; };
+		66B5A0701D0D008000373991 /* MMNewsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMNewsModel.h; sourceTree = "<group>"; };
+		66B5A0711D0D008000373991 /* MMNewsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMNewsModel.m; sourceTree = "<group>"; };
+		66B5A0731D0D085700373991 /* MMNewsListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMNewsListView.h; sourceTree = "<group>"; };
+		66B5A0741D0D085700373991 /* MMNewsListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMNewsListView.m; sourceTree = "<group>"; };
 		66C381441D012E99006B06F4 /* MMRotatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMRotatorView.h; sourceTree = "<group>"; };
 		66C381451D012E99006B06F4 /* MMRotatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMRotatorView.m; sourceTree = "<group>"; };
 		66DA50F51CFEE18C00D74B86 /* MMHomeModuleModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMHomeModuleModel.h; sourceTree = "<group>"; };
@@ -486,6 +501,16 @@
 				66F488751D069B6C002CAC32 /* MMNewsNavigationController.m */,
 				6628D6431D07B6770092E003 /* MMNewsViewModel.h */,
 				6628D6441D07B6770092E003 /* MMNewsViewModel.m */,
+				66B5A0671D0CFC1200373991 /* MMNewsSectionsView.h */,
+				66B5A0681D0CFC1200373991 /* MMNewsSectionsView.m */,
+				66B5A06A1D0CFE9200373991 /* MMNewsSectionsTitleView.h */,
+				66B5A06B1D0CFE9200373991 /* MMNewsSectionsTitleView.m */,
+				66B5A06D1D0CFF7000373991 /* MMNewsSectionsTitleViewCell.h */,
+				66B5A06E1D0CFF7000373991 /* MMNewsSectionsTitleViewCell.m */,
+				66B5A0701D0D008000373991 /* MMNewsModel.h */,
+				66B5A0711D0D008000373991 /* MMNewsModel.m */,
+				66B5A0731D0D085700373991 /* MMNewsListView.h */,
+				66B5A0741D0D085700373991 /* MMNewsListView.m */,
 			);
 			path = MNews;
 			sourceTree = "<group>";
@@ -825,6 +850,7 @@
 				663855B11CFEC2060048301D /* MMBaseNavigationController.m in Sources */,
 				660D11571D002E550059413A /* NSString+ExtensionMExt.m in Sources */,
 				66E6B4041CFECB510008A0AF /* MMOneViewController.m in Sources */,
+				66B5A0751D0D085700373991 /* MMNewsListView.m in Sources */,
 				660D11211D0020140059413A /* MMMMemorandumViewController.m in Sources */,
 				660D115B1D002E550059413A /* UIFont+ExtensionMExt.m in Sources */,
 				660D11561D002E550059413A /* NSObject+ExtensionMExt.m in Sources */,
@@ -832,7 +858,9 @@
 				660D11521D002E550059413A /* NSArray+ExtensionMExt.m in Sources */,
 				663855BD1CFEC2B30048301D /* MMNewsViewController.m in Sources */,
 				66EF63E51CFECEB300D8B027 /* MMHomeModuleSelectionView.m in Sources */,
+				66B5A06C1D0CFE9200373991 /* MMNewsSectionsTitleView.m in Sources */,
 				663855C01CFEC3220048301D /* MMAppDelegate.m in Sources */,
+				66B5A0721D0D008000373991 /* MMNewsModel.m in Sources */,
 				660D11541D002E550059413A /* NSDate+ExtensionMExt.m in Sources */,
 				66F488761D069B6C002CAC32 /* MMNewsNavigationController.m in Sources */,
 				663855BA1CFEC2980048301D /* MMHomeViewController.m in Sources */,
@@ -851,11 +879,13 @@
 				660D115E1D002E550059413A /* UIView+ExtensionMExt.m in Sources */,
 				663855B71CFEC27D0048301D /* MMBaseViewController.m in Sources */,
 				663855AE1CFEC1DA0048301D /* MMFirstTabBarController.m in Sources */,
+				66B5A0691D0CFC1200373991 /* MMNewsSectionsView.m in Sources */,
 				660D111E1D001FF30059413A /* MMMContactsViewController.m in Sources */,
 				663855B41CFEC2540048301D /* MMFirstNavigationController.m in Sources */,
 				66E6B4011CFECB1E0008A0AF /* MMMeViewController.m in Sources */,
 				660D11271D0020640059413A /* MMMPhoneViewController.m in Sources */,
 				660D11501D002E550059413A /* HelperMExt.m in Sources */,
+				66B5A06F1D0CFF7000373991 /* MMNewsSectionsTitleViewCell.m in Sources */,
 				66E298781D01947200647CDA /* MMHomeTopView.m in Sources */,
 				6638556A1CFEBD840048301D /* main.m in Sources */,
 				660D115A1D002E550059413A /* UIDevice+ExtensionMExt.m in Sources */,
