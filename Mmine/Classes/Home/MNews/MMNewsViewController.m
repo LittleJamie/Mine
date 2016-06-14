@@ -10,6 +10,8 @@
 #import "UIBarButtonItem+JAExt.h"
 #import "MMNewsViewModel.h"
 #import "MMNewsListView.h"
+#import "MMNetwork.h"
+#import "MMNewsModel.h"
 @implementation MMNewsViewController
 
 -(void)viewDidLoad
@@ -20,7 +22,6 @@
 }
 - (void)createNavigation
 {
-//    self.navigationController.tabBarItem.ba
     self.navigationController.navigationBar.hidden = NO;
     self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImageName:@"navigationbar_back_withtext" HighImageNmae:@"navigationbar_back_withtext_highlighted" Target:self Action:@selector(back)];
     self.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithImageName:@"navigationbar_back_withtext" HighImageNmae:@"navigationbar_back_withtext_highlighted" Target:self Action:@selector(back)];
@@ -35,7 +36,11 @@
 
     
     [self.view addSubview:topScrollView];
+    MMNewsModel *params = [[MMNewsModel alloc] init];
     
+    [[MMNetwork shareInstance] postWithURL:@"http://c.tagtic.cn/minfo/reg" params:params resultClass:[MMNewsModel class] completionBlock:^(NSURLSessionDataTask *task, MMNetWorkResult *networkResult, NSError *error) {
+        NSLog(@"%@",networkResult);
+    }];
 }
 #pragma mark - Event Processing
 //Navi左侧按钮点击事件

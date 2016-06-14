@@ -34,6 +34,8 @@
 		660D11601D002F690059413A /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 660D115F1D002F690059413A /* ImageIO.framework */; };
 		660D11621D002F750059413A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 660D11611D002F750059413A /* Security.framework */; };
 		660D11641D002F890059413A /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 660D11631D002F890059413A /* libz.tbd */; };
+		661B98961D0E91FF00A76145 /* MMNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 661B98951D0E91FF00A76145 /* MMNetwork.m */; };
+		661B989A1D0EA43A00A76145 /* NSObject+MMModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 661B98991D0EA43A00A76145 /* NSObject+MMModel.m */; };
 		6628D6451D07B6770092E003 /* MMNewsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6628D6441D07B6770092E003 /* MMNewsViewModel.m */; };
 		6638556A1CFEBD840048301D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 663855691CFEBD840048301D /* main.m */; };
 		663855751CFEBD840048301D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 663855741CFEBD840048301D /* Assets.xcassets */; };
@@ -57,6 +59,10 @@
 		66B5A0721D0D008000373991 /* MMNewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B5A0711D0D008000373991 /* MMNewsModel.m */; };
 		66B5A0751D0D085700373991 /* MMNewsListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B5A0741D0D085700373991 /* MMNewsListView.m */; };
 		66C381461D012E99006B06F4 /* MMRotatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C381451D012E99006B06F4 /* MMRotatorView.m */; };
+		66CBB0D41D0FB308001D25EB /* MMApp.m in Sources */ = {isa = PBXBuildFile; fileRef = 66CBB0D31D0FB308001D25EB /* MMApp.m */; };
+		66CBB0D71D0FB31C001D25EB /* MMDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 66CBB0D61D0FB31C001D25EB /* MMDevice.m */; };
+		66CBB0DA1D0FB4D4001D25EB /* MMHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 66CBB0D91D0FB4D4001D25EB /* MMHeader.m */; };
+		66CBB0DD1D0FEC95001D25EB /* MMNetWorkResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 66CBB0DC1D0FEC95001D25EB /* MMNetWorkResult.m */; };
 		66DA50F71CFEE18C00D74B86 /* MMHomeModuleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 66DA50F61CFEE18C00D74B86 /* MMHomeModuleModel.m */; };
 		66E298781D01947200647CDA /* MMHomeTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 66E298771D01947200647CDA /* MMHomeTopView.m */; };
 		66E6B4011CFECB1E0008A0AF /* MMMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66E6B4001CFECB1E0008A0AF /* MMMeViewController.m */; };
@@ -139,6 +145,10 @@
 		660D115F1D002F690059413A /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		660D11611D002F750059413A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		660D11631D002F890059413A /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		661B98941D0E91FF00A76145 /* MMNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMNetwork.h; sourceTree = "<group>"; };
+		661B98951D0E91FF00A76145 /* MMNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMNetwork.m; sourceTree = "<group>"; };
+		661B98981D0EA43A00A76145 /* NSObject+MMModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MMModel.h"; sourceTree = "<group>"; };
+		661B98991D0EA43A00A76145 /* NSObject+MMModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MMModel.m"; sourceTree = "<group>"; };
 		6628D6431D07B6770092E003 /* MMNewsViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMNewsViewModel.h; sourceTree = "<group>"; };
 		6628D6441D07B6770092E003 /* MMNewsViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMNewsViewModel.m; sourceTree = "<group>"; };
 		663855651CFEBD840048301D /* Mmine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mmine.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -189,6 +199,14 @@
 		66B5A0741D0D085700373991 /* MMNewsListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMNewsListView.m; sourceTree = "<group>"; };
 		66C381441D012E99006B06F4 /* MMRotatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMRotatorView.h; sourceTree = "<group>"; };
 		66C381451D012E99006B06F4 /* MMRotatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMRotatorView.m; sourceTree = "<group>"; };
+		66CBB0D21D0FB308001D25EB /* MMApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMApp.h; sourceTree = "<group>"; };
+		66CBB0D31D0FB308001D25EB /* MMApp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMApp.m; sourceTree = "<group>"; };
+		66CBB0D51D0FB31C001D25EB /* MMDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDevice.h; sourceTree = "<group>"; };
+		66CBB0D61D0FB31C001D25EB /* MMDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDevice.m; sourceTree = "<group>"; };
+		66CBB0D81D0FB4D4001D25EB /* MMHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMHeader.h; sourceTree = "<group>"; };
+		66CBB0D91D0FB4D4001D25EB /* MMHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMHeader.m; sourceTree = "<group>"; };
+		66CBB0DB1D0FEC95001D25EB /* MMNetWorkResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMNetWorkResult.h; sourceTree = "<group>"; };
+		66CBB0DC1D0FEC95001D25EB /* MMNetWorkResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMNetWorkResult.m; sourceTree = "<group>"; };
 		66DA50F51CFEE18C00D74B86 /* MMHomeModuleModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMHomeModuleModel.h; sourceTree = "<group>"; };
 		66DA50F61CFEE18C00D74B86 /* MMHomeModuleModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMHomeModuleModel.m; sourceTree = "<group>"; };
 		66E298761D01947200647CDA /* MMHomeTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMHomeTopView.h; sourceTree = "<group>"; };
@@ -341,6 +359,7 @@
 		660D112F1D002E550059413A /* MExtensionKit */ = {
 			isa = PBXGroup;
 			children = (
+				661B98971D0EA35100A76145 /* Model */,
 				660D11301D002E550059413A /* ExtensionMacros.h */,
 				660D11311D002E550059413A /* HelperMExt.h */,
 				660D11321D002E550059413A /* HelperMExt.m */,
@@ -374,6 +393,32 @@
 				660D114E1D002E550059413A /* UIView+ExtensionMExt.m */,
 			);
 			path = MExtensionKit;
+			sourceTree = "<group>";
+		};
+		661B98931D0E91DE00A76145 /* MNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				661B98941D0E91FF00A76145 /* MMNetwork.h */,
+				661B98951D0E91FF00A76145 /* MMNetwork.m */,
+				66CBB0D21D0FB308001D25EB /* MMApp.h */,
+				66CBB0D31D0FB308001D25EB /* MMApp.m */,
+				66CBB0D51D0FB31C001D25EB /* MMDevice.h */,
+				66CBB0D61D0FB31C001D25EB /* MMDevice.m */,
+				66CBB0D81D0FB4D4001D25EB /* MMHeader.h */,
+				66CBB0D91D0FB4D4001D25EB /* MMHeader.m */,
+				66CBB0DB1D0FEC95001D25EB /* MMNetWorkResult.h */,
+				66CBB0DC1D0FEC95001D25EB /* MMNetWorkResult.m */,
+			);
+			path = MNetwork;
+			sourceTree = "<group>";
+		};
+		661B98971D0EA35100A76145 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				661B98981D0EA43A00A76145 /* NSObject+MMModel.h */,
+				661B98991D0EA43A00A76145 /* NSObject+MMModel.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		6638555C1CFEBD840048301D = {
@@ -549,6 +594,7 @@
 		663855A41CFEC10E0048301D /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				661B98931D0E91DE00A76145 /* MNetwork */,
 				668D25A11D057FE00037498E /* Categories */,
 				668774441D05113800DA0C58 /* DonewsSDK */,
 				660D112E1D002E550059413A /* MExtensionKit */,
@@ -853,6 +899,7 @@
 				66B5A0751D0D085700373991 /* MMNewsListView.m in Sources */,
 				660D11211D0020140059413A /* MMMMemorandumViewController.m in Sources */,
 				660D115B1D002E550059413A /* UIFont+ExtensionMExt.m in Sources */,
+				661B98961D0E91FF00A76145 /* MMNetwork.m in Sources */,
 				660D11561D002E550059413A /* NSObject+ExtensionMExt.m in Sources */,
 				663855A81CFEC1A70048301D /* MMBaseTabBarController.m in Sources */,
 				660D11521D002E550059413A /* NSArray+ExtensionMExt.m in Sources */,
@@ -876,8 +923,11 @@
 				66DA50F71CFEE18C00D74B86 /* MMHomeModuleModel.m in Sources */,
 				66C381461D012E99006B06F4 /* MMRotatorView.m in Sources */,
 				660D112D1D0020880059413A /* MMMVideoViewController.m in Sources */,
+				661B989A1D0EA43A00A76145 /* NSObject+MMModel.m in Sources */,
 				660D115E1D002E550059413A /* UIView+ExtensionMExt.m in Sources */,
+				66CBB0DD1D0FEC95001D25EB /* MMNetWorkResult.m in Sources */,
 				663855B71CFEC27D0048301D /* MMBaseViewController.m in Sources */,
+				66CBB0D71D0FB31C001D25EB /* MMDevice.m in Sources */,
 				663855AE1CFEC1DA0048301D /* MMFirstTabBarController.m in Sources */,
 				66B5A0691D0CFC1200373991 /* MMNewsSectionsView.m in Sources */,
 				660D111E1D001FF30059413A /* MMMContactsViewController.m in Sources */,
@@ -886,6 +936,8 @@
 				660D11271D0020640059413A /* MMMPhoneViewController.m in Sources */,
 				660D11501D002E550059413A /* HelperMExt.m in Sources */,
 				66B5A06F1D0CFF7000373991 /* MMNewsSectionsTitleViewCell.m in Sources */,
+				66CBB0DA1D0FB4D4001D25EB /* MMHeader.m in Sources */,
+				66CBB0D41D0FB308001D25EB /* MMApp.m in Sources */,
 				66E298781D01947200647CDA /* MMHomeTopView.m in Sources */,
 				6638556A1CFEBD840048301D /* main.m in Sources */,
 				660D115A1D002E550059413A /* UIDevice+ExtensionMExt.m in Sources */,
