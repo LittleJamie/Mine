@@ -34,7 +34,7 @@
  *  @param lastPageName 进入该页面前的上一个页面，如果是第一个页面可以为空。
  *  @param pageNum      自定义的访问的页面序号。如：1、2、3
  */
-+ (void)onPageAccess:(NSString *)pageName lastPageName:(NSString *)lastPageName pageNum:(int)pageNum;
++ (void)onPageAccess:(NSString *)pageName lastPageName:(NSString *)lastPageName pageNum:(long)pageNum;
 
 ///---------------------------------------------------------------------------------------
 /// @name  事件统计
@@ -46,4 +46,21 @@
  *  @param eventname 事件名称
  */
 + (void)onEvents:(NSString *)eventname;
+
+/**
+ *  游戏充值统计
+ *
+ *  @param paymentMethod 充值方式
+ *  @param money         充值金额
+ */
++ (void)onRecharge:(NSString *)paymentMethod money:(long)money;
+
+/**
+ *  游戏消费统计
+ *
+ *  @param consumptionPoint 消费点
+ *  @param money            消费金额
+ */
++ (void)onConsumption:(NSString *)consumptionPoint money:(long)money;
+
 @end

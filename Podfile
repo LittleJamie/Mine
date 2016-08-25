@@ -7,6 +7,7 @@ pod 'AFNetworking'
 pod 'Mantle'
 pod 'SDWebImage'
 pod 'MBProgressHUD'
+pod 'ReactiveCocoa'
 
 target 'Mmine' do
 

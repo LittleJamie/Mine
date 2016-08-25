@@ -9,6 +9,13 @@
 #import <Foundation/Foundation.h>
 
 @interface MMNewsViewModel : NSObject
+
+/**
+ *  获取新闻概要模型
+ */
+@property(nonatomic,strong)RACCommand *fetchNewsEntityCommand;
+
+
 + (void)loadChannelListData:(void (^)(NSArray *listArray))block;
 + (NSArray *)loadChannelList;
 @end

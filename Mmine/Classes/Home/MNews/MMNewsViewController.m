@@ -12,6 +12,8 @@
 #import "MMNewsListView.h"
 #import "MMNetwork.h"
 #import "MMNewsModel.h"
+#import "MMNetWorkResult.h"
+#import "DonewsAnalytics.h"
 @implementation MMNewsViewController
 
 -(void)viewDidLoad
@@ -36,11 +38,13 @@
 
     
     [self.view addSubview:topScrollView];
-    MMNewsModel *params = [[MMNewsModel alloc] init];
-    
-    [[MMNetwork shareInstance] postWithURL:@"http://c.tagtic.cn/minfo/reg" params:params resultClass:[MMNewsModel class] completionBlock:^(NSURLSessionDataTask *task, MMNetWorkResult *networkResult, NSError *error) {
-        NSLog(@"%@",networkResult);
+//    MMNewsModel *params = [[MMNewsModel alloc] init];
+    [[MMNetwork shareInstance] getWithURL:@"http://c.m.163.com/nc/article/headline/T1348647853363/0-20.html" params:nil resultClass:[MMNewsModel class] completionBlock:^(NSURLSessionDataTask *task, MMNetWorkResult *networkResult, NSError *error) {
+//        NSLog(@"%@",networkResult.result);
     }];
+
+    [DonewsAnalytics onPageAccess:@"news" lastPageName:@"home" pageNum:2];
+    [DonewsAnalytics onEvents:@"test1"];
 }
 #pragma mark - Event Processing
 //Navi左侧按钮点击事件

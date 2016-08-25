@@ -21,10 +21,7 @@
 #define kDNbody @"body"
 #define kDNcode @"code"
 #define kDNmessage @"message"
-//成功回调的Block
-typedef void(^successBlock) (id);
-//失败回调的Block
-typedef void(^failureBlock) (NSError *error);
+
 @implementation MMNetwork
 
 #pragma mark - shared
@@ -82,17 +79,23 @@ typedef void(^failureBlock) (NSError *error);
     header.App=app;
     return [MTLJSONAdapter JSONDictionaryFromModel:header error:nil];
 }
-- (NSURLSessionDataTask *)getWithURL:(NSString *)url params:(id)params resultClass:(Class)resultClass completionBlock:(netWorkCompletionBlock)completionBlock isAnimation:(BOOL)animation
+- (NSURLSessionDataTask *)getWithURL:(NSString *)url params:(id)params resultClass:(Class)resultClass completionBlock:(netWorkCompletionBlock)completionBlock 
 {
-    NSDictionary *dict = [MTLJSONAdapter JSONDictionaryFromModel:params error:nil];
-    NSURLSessionDataTask *task = [self GET:url parameters:dict success:^(id responseObject) {
+    NSDictionary *dict = nil;
+    if (params) {
+        
+        dict = [MTLJSONAdapter JSONDictionaryFromModel:params error:nil];
+    }
+    NSURLSessionDataTask *task = [self GET:url parameters:dict != nil ? dict : nil success:^(id responseObject) {
+//        NSLog(@"%@",responseObject);
         if (completionBlock) {
+            
             MMNetWorkResult *resultObj = [[MMNetWorkResult alloc] init];
             resultObj.code = [responseObject[kMMCode] integerValue];
             resultObj.message = responseObject[kMMMessage];
             
             NSMutableArray *temp = [NSMutableArray arrayWithArray:responseObject[kMMBody]];
-            
+//            NSLog(@"\nbody = \n%@",temp);
             if (temp && ![temp isEqual:[NSNull null]]) {
                 resultObj.result = [NSMutableArray arrayWithArray:[MTLJSONAdapter modelsOfClass:resultClass fromJSONArray:temp error:nil]];
                 //                UIFont *font = [UIFont systemFontOfSize:12 weight:0.8];
@@ -235,7 +238,7 @@ typedef void(^failureBlock) (NSError *error);
 - (NSURLSessionDataTask *)GET:(NSString *)url parameters:(NSDictionary *)parameters success:(successBlock)success failure:(failureBlock)failure
 {
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
-    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html,text/plain", nil];
+    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html",@"text/plain", nil];
     NSURLSessionDataTask *task = [manager GET:url parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         if (success) {
             success(responseObject);

@@ -87,11 +87,15 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods/AFNetworking.framework"
   install_framework "Pods/MBProgressHUD.framework"
   install_framework "Pods/Mantle.framework"
+  install_framework "Pods/ReactiveCocoa.framework"
+  install_framework "Pods/Result.framework"
   install_framework "Pods/SDWebImage.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods/AFNetworking.framework"
   install_framework "Pods/MBProgressHUD.framework"
   install_framework "Pods/Mantle.framework"
+  install_framework "Pods/ReactiveCocoa.framework"
+  install_framework "Pods/Result.framework"
   install_framework "Pods/SDWebImage.framework"
 fi
